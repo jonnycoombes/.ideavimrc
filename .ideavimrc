@@ -1,0 +1,109 @@
+let mapleader=","
+
+set easymotion
+set hlsearch
+set incsearch
+set ideamarks
+set wrap
+set textwidth=120
+
+" Set the default split
+set splitright
+
+let g:EasyMotion_override_acejump = 0
+
+" The surround plugin
+Plug 'tpope/surround'
+
+" Highlight yanks
+Plug 'machakann/vim-highlightedyank'
+let g:highlightedyank_highlight_duration = "1000"
+let g:highlightedyank_highlight_color = "rgba(100, 160, 160, 155)"
+
+" The old NERDTree
+Plug 'preservim/nerdtree'
+
+" map out the esc key to something more useful
+inoremap jj <Esc>
+
+" Visual select of current line
+nnoremap <Leader>l ^v$
+" Visual select to the end of the current line
+nnoremap <Leader>L v$
+" Visual select current word
+nnoremap <Leader>w viw
+" Visual select to next period character
+nnoremap <Leader>. vf.
+
+" Go to different places
+nnoremap <Leader>gw :action FileStructurePopup<CR>
+nnoremap <Leader>ge :action GotoNextError<CR>
+nnoremap <Leader>gd :action GotoDeclaration<CR>
+nnoremap <Leader>gf :action GotoFile<CR>
+nnoremap <Leader>gc :action GotoClass<CR>
+nnoremap <Leader>gs :action GotoSymbol<CR>
+nnoremap <Leader>gi :action GotoImplementation<CR>
+nnoremap <Leader>gr :action RecentFiles<CR>
+
+" AceJump specifics
+nnoremap <Leader>ga :action AceAction<CR>
+nnoremap <Leader>gt :action AceTargetAction<CR>
+nnoremap <Leader>gl :action AceLineAction<CR>
+
+nnoremap <Leader>gB :action Back<CR>
+nnoremap <Leader>gF :action Forward<CR>
+nnoremap <Leader>gU :action MethodUp<CR>
+nnoremap <Leader>gD :action MethodDown<CR>
+
+" View related actions
+nnoremap <Leader>vd :action QuickJavaDoc<CR>
+nnoremap <Leader>vI :action QuickImplementations<CR>
+nnoremap <Leader>vT :action QuickTypeDefinition<CR>
+nnoremap <Leader>vN :NERDTreeToggle<CR>
+nnoremap <Leader>vD :action ToggleDistractionFreeMode<CR>
+
+" Useful jumps
+nnoremap <Leader>je $
+nnoremap <Leader>js ^
+
+" Find different things
+nnoremap <Leader>fu :action FindUsages<CR>
+nnoremap <Leader>fp :action FindInPath<CR>
+nnoremap <Leader>ff :action Find<CR>
+
+" History and bookmarks
+
+
+" Editing and commenting
+nnoremap <Leader>cr :action RenameElement<CR>
+vnoremap <Leader>l :action CommentByLineComment<CR>
+vnoremap <Leader>b :action CommentByBlockComment<CR>
+nnoremap <Leader>cac :action EditorAddCaretPerSelectedLine<CR>
+nnoremap <Leader>cd :action EditorDuplicate<CR>
+nnoremap <Leader>cS :action SilentCodeCleanup<CR>
+nnoremap <Leader>cF :action ReformatCode<CR>
+nnoremap <Leader>cP :action ReformatWithPrettierAction<CR>
+
+" Selection commands
+nnoremap <Leader>sp :action SelectInProjectView<CR>
+nnoremap <Leader>sa :action ShowIntentionActions<CR>
+nnoremap <Leader>sP :action SelectInProjectView<CR>
+
+" Folds
+nnoremap <Leader>E :action ExpandRegion<CR>
+nnoremap <Leader>C :action CollapseRegion<CR>
+nnoremap <Leader>T :action ToggleRenderedDocPresentation<CR>
+
+" Breakpoints etc...
+nnoremap <Leader>B :action ToggleLineBreakpoint<CR>
+nnoremap <Leader>G :action Vcs.QuickListPopupAction<CR>
+
+" Git annotate
+nnoremap <Leader>A :action Annotate<CR>
+nnoremap <Leader>S :action Synchronize<CR>
+
+" Expand a Rust macro
+nnoremap <Leader>rE :action Rust.ShowRecursiveMacroExpansionAction<CR>
+
+" Show the current test history
+nnoremap <Leader>wT :action ImportTests<CR>
