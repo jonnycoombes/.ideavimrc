@@ -61,6 +61,7 @@ nnoremap <Leader>vI :action QuickImplementations<CR>
 nnoremap <Leader>vT :action QuickTypeDefinition<CR>
 nnoremap <Leader>vN :NERDTreeToggle<CR>
 nnoremap <Leader>vD :action ToggleDistractionFreeMode<CR>
+nnoremap <Leader>vF :action ToggleFullScreen<CR>
 
 " Useful jumps
 nnoremap <Leader>je $
