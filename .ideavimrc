@@ -14,6 +14,7 @@ let g:EasyMotion_override_acejump = 0
 
 " The surround plugin
 Plug 'tpope/surround'
+set surround
 
 " Highlight yanks
 Plug 'machakann/vim-highlightedyank'
