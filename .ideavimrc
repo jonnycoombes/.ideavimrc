@@ -26,6 +26,7 @@ Plug 'preservim/nerdtree'
 
 " map out the esc key to something more useful
 inoremap jj <Esc>
+inoremap jja <Esc>A
 
 " Visual select of current line
 nnoremap <Leader>l ^v$
