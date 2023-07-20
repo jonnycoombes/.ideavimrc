@@ -73,6 +73,7 @@ nnoremap <Leader>js ^
 nnoremap <Leader>fu :action FindUsages<CR>
 nnoremap <Leader>fp :action FindInPath<CR>
 nnoremap <Leader>ff :action Find<CR>
+nnoremap <Leader>fR :action ReplaceInPath<CR>
 
 " History and bookmarks
 
